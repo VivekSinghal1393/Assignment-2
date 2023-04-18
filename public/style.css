@@ -1,0 +1,40 @@
+body{
+    background-color:lightcyan;
+    font-size: 15px;
+}
+
+ .container2{
+    /* border:2px solid; */
+    width:50%;
+
+}
+ .container1{
+    position: relative;
+    margin-top: -500px;
+    margin-left: 673px;
+    width:50%;
+
+}
+.text{
+    text-align: center;
+    font-size: 40px;
+    color:coral;
+    margin: 20px;
+    font-weight: bold;
+}
+.box{
+    padding-left: 250px;
+}
+
+button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 50%;
+}
+.formvalue{
+    margin-left: 150px;
+}
+
+.form-control{
+    width: 75%;
+}

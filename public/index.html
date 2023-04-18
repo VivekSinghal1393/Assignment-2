@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>User Data Table</title>
+</head>
+<body>
+    <div class="text">User Data Showing Table</div>
+    <!-- <div class="container"> -->
+        <!-- container 1 -->
+        <div class="container2">
+            <!-- <div class="row"> -->
+                <!-- <div class="col"> -->
+                    <div style="text-align: center;font-size: 30px;font-weight: bold;">Add Data</div>
+                    <form id="addData">
+                        <div class="formvalue">
+                            <label for="firstname">First Name</label>
+                            <input type="text" class="form-control" id="firstname" placeholder="First Name"/>
+                        </div>
+                        <div class="formvalue">
+                            <label for="middlename">Middle Name</label>
+                            <input type="text" class="form-control" id="middlename" placeholder="Middle Name"/>
+                        </div>
+                        <div class="formvalue">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" class="form-control" id="lastname" placeholder="Last Name"/>
+                        </div>
+                        <div class="formvalue">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email"/>
+                        </div>
+                        <div class="formvalue">
+                            <label for="phoneno">Phone Number</label>
+                            <input type="text" class="form-control" id="phoneno" placeholder="Phone Number"/>
+                        </div>
+                        <div class="formvalue">
+                            <label for="role">Role</label><br/>
+                            <div id="role" class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-secondary active">
+                                    <input type="radio" name="role" id="Superadmin" autocomplete="off" checked/>Super Admin
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="role" id="admin" autocomplete="off"/>Admin
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="role" id="subscriber" autocomplete="off"/>Subscriber
+                                </label>
+                            </div>
+                        </div>
+                        <div class="formvalue">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="Address"/>
+                        </div>
+                        <br/>
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-primary btn-lg" onclick="addData()">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            <!-- </div> -->
+        <!-- </div> -->
+        <div class="container1">
+            <!-- <div class="row"> -->
+                <!-- <div class="col"> -->
+                    <div class="box">
+                        <button id="loaddata" type="button" class="btn btn-primary btn-lg" onclick="loadData()">Load Data</button>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Middle Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Phone Number</th>
+                                <th scope="col">Role</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Edit</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablebody"></tbody>
+                    </table>
+                <!-- </div> -->
+            <!-- </div> -->
+        </div>
+    <!-- </div> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>let exports = {}; </script>
+    <!-- <script src="index.js"></script> -->
+    <script type="javascript" src="../dist/public/index.js"></script>
+</body>
+</html>

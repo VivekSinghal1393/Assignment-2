@@ -1,0 +1,6 @@
+.idea
+*.js
+node_modules
+dist
+.env
+Assignment 2/logs
