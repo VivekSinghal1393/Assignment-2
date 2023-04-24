@@ -38,9 +38,9 @@ function dateTimeFormatter(target:any,key:string,descriptor:PropertyDescriptor){
 	descriptor.value=function(...args:any[]){
 		const result=originalMethod.apply(this,args);
 		if(result instanceof Date){
-			const formattedDate = result.toString()
-			.replace(/T/,' ')
-			.replace(/\..+/,'')
+			const formattedDate = result.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
+			// .replace(/T/,' ')
+			// .replace(/\..+/,'')
 			;
 			const element=document.getElementById('DateShow');
 			if(element){
