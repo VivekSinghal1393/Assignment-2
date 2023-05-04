@@ -1,0 +1,72 @@
+body{
+    background-color:lightcyan;
+    font-size: 15px;
+}
+/* .col-lg > button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+} */
+
+ /* .container1{
+    position: relative;
+    margin-top: -500px;
+    margin-left: 673px;
+    width:50%;
+
+}
+.container2{
+    /* border:2px solid;
+    width:50%;
+
+} */
+ 
+.text{
+    text-align: center;
+    font-size: 40px;
+    color:coral;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.box{
+    padding-left: 500px;
+    margin-bottom: 10px;
+}
+.box>button{
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* .box1{
+    padding-left: 500px;
+    margin-bottom: 10px;
+}
+.box1>button{
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+} */
+
+/* button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 50%;
+} */
+/*
+.formvalue{
+    margin-left: 150px;
+}
+
+.form-control{
+    width: 75%;
+} */
+
+#DateShow{
+    font-size: 20px;
+    /* padding-left: 350px; */
+    text-align: center;
+    color:coral;
+    font-weight: bold;
+}

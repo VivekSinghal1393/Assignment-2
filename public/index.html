@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>User Data Table</title>
+</head>
+
+	<body>
+		<div class="container">
+			<h3 id="DateShow"></h3>
+		</div>
+		<div class="text">User Data Showing Table</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg">
+					<div class="box">
+					<button
+						id="loadData"
+						type="button"
+						class="btn btn-primary"
+						onclick="loadData()"
+					>
+						Load Data
+					</button>
+					</div>
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">First Name</th>
+								<th scope="col">Middle Name</th>
+								<th scope="col">Last Name</th>
+								<th scope="col">Email</th>
+								<th scope="col">Date Of Joining</th>
+								<th scope="col">Phone Number</th>
+								<th scope="col">Role</th>
+								<th scope="col">Address</th>
+								<th scope="col">Edit</th>
+								<th scope="col">Delete</th>
+							</tr>
+						</thead>
+						<tbody id="tableBody"></tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg">
+					<div style="text-align: center;font-size: 30px;font-weight: bold;color:coral;">Add Data</div>
+					<form id="addForm">
+						<div class="form-group">
+							<label for="firstNameInput">First Name</label>
+							<input
+								type="text"
+								class="form-control"
+								id="firstNameInput"
+								placeholder="First Name"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="middleNameInput">Middle Name</label>
+							<input
+								type="text"
+								class="form-control"
+								id="middleNameInput"
+								placeholder="Middle Name"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="lastNameInput">Last Name</label>
+							<input
+								type="text"
+								class="form-control"
+								id="lastNameInput"
+								placeholder="Last Name"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="emailInput">Email address</label>
+							<input
+								type="email"
+								class="form-control"
+								id="emailInput"
+								aria-describedby="emailHelp"
+								placeholder="Email"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="dojInput">Date Of Joining</label>
+							<input
+								type="date"
+								class="form-control"
+								id="dojInput"
+								placeholder="Date Of Joining"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="phoneNumberInput">Phone Number</label>
+							<input
+								type="text"
+								class="form-control"
+								id="phoneNumberInput"
+								placeholder="Phone Number"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="addressInput">Role</label><br />
+							<div id="roleInput" class="btn-group btn-group-toggle" data-toggle="buttons">
+								<label class="btn btn-secondary active">
+									<input
+										type="radio"
+										name="roleInput"
+										id="superAdmin"
+										autocomplete="off"
+										checked
+									/>
+									Super Admin
+								</label>
+								<label class="btn btn-secondary">
+									<input
+										type="radio"
+										name="roleInput"
+										id="admin"
+										autocomplete="off"
+									/>
+									Admin
+								</label>
+								<label class="btn btn-secondary">
+									<input
+										type="radio"
+										name="roleInput"
+										id="subscriber"
+										autocomplete="off"
+									/>
+									Subscriber
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="addressInput">Address</label>
+							<input
+								type="text"
+								class="form-control"
+								id="addressInput"
+								placeholder="Address"
+							/>
+						</div>
+						<label> </label>
+						<div class="box"><button type="button" class="btn btn-primary" onclick="addData()">Submit</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<script> let exports = {}; </script>
+		<script src="./index.js"></script>
+	</body>
+</html>
